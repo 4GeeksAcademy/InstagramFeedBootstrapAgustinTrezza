@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-... tu clave de integridad ..." crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid py-2 px-3">
+            <div>
+                <i class="fab fa-instagram icono-instagram"></i>
+                <a class="navbar-brand" href="#">Instagram</a>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+                <div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li class="dropdown-divider"></li> <!-- Separador -->
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Create a new post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          
+                <div class="modal-body">
+                    <strong>Caption:</strong>
+                    <div class="form-floating mt-2">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Add the caption oy your post here</label>
+                    </div>
+
+                    <div class="mt-2">
+                        <button type="button" class="boton-icon-modal"><i class="fa-solid fa-camera icon-modal"></i></button>
+                        <button type="button" class="boton-icon-modal"><i class="fa-solid fa-location-dot icon-modal"></i></button>
+                    </div>
+                </div>
+            
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="d-flex justify-content-center align-items-center gap-4 mt-3 mb-3">
+        <a href="./grid-page.html"> 
+            <i class="fa-solid fa-table icon-no-active"></i>
+        </a>
+        <a href="./index.html">
+            <i class="fa-regular fa-file icon-active"></i>
+        </a>
+    </div>
+
+    <section class="d-flex flex-column gap-4 justify-content-center align-items-center contenedor-cards">
+        
+        <div class="card" style="width: 35rem;">
+            <div class="d-flex justify-content-between align-items-center header-card">
+                <div>
+                    <p class="fs-4 mb-2">My Crazy dog Spark!</p>
+                </div>
+                <div>
+                    <p>08/26</p>
+                </div>
+            </div>
+            <img src="./img/perro.jpeg" class="card-img-top image-post-1" alt="post-img">
+            <div class="card-body">
+                <p class="m-0"><strong>204 Likes</strong></p>
+              <p class="card-text">This is an example of a very good that you can post on instagram.</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 35rem;">
+            <div class="d-flex justify-content-between align-items-center header-card">
+                <div>
+                    <p class="fs-4">The greatness of Croatia</p>
+                </div>
+                <div>
+                    <p>04/09</p>
+                </div>
+            </div>
+            <img src="./img/croacia.webp" class="card-img-top image-post-1" alt="post-img">
+            <div class="card-body">
+                <p class="m-0"><strong>255985 Likes</strong></p>
+              <p class="card-text">This is an example of a very good that you can post on instagram.</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 35rem;">
+            <div class="d-flex justify-content-between align-items-center header-card">
+                <div>
+                    <p class="fs-4">Amazing GOAL by Cristiano</p>
+                </div>
+                <div>
+                    <p>06/10</p>
+                </div>
+            </div>
+            <img src="./img/cristiano.jpeg" class="card-img-top image-post-2" alt="post-img">
+            <div class="card-body">
+                <p class="m-0"><strong>204 Likes</strong></p>
+              <p class="card-text">This is an example of a very good that you can post on instagram.</p>
+            </div>
+        </div>
+    </section>
+    
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-... tu clave de integridad ..." crossorigin="anonymous"></script>
+      <!-- Archivo JavaScript de Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-... tu clave de integridad ..." crossorigin="anonymous"></script>
+</body>
+</html>
